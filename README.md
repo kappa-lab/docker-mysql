@@ -97,9 +97,6 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'remote-user'@'%';
 mysql> flush privileges;
 ```
 
-## コンテナのIP制限解除
-```sh
-```
 
 ## ホストPCから接続する
 
