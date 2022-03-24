@@ -88,5 +88,22 @@ mysql> show tables in mysql;
 37 rows in set (0.06 sec)
 ```
 
+#  ホストPCから接続する
+## リモート用ユーザー作成
+rootユーザで接続済
+```sh
+mysql> CREATE USER 'remote-user'@'%' IDENTIFIED WITH mysql_native_password BY 'abc';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'remote-user'@'%';
+mysql> flush privileges;
+```
 
+## コンテナのIP制限解除
+```sh
+```
+
+## ホストPCから接続する
+
+```sh
+mysql -h 127.0.0.1 -u remote-user -p
+```
 
