@@ -50,6 +50,7 @@ root@1594af897019:/# mysql -uroot -p
 Enter password: 123456
 ```
 
+### 接続確認
 ```sh
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 8
@@ -57,3 +58,35 @@ Server version: 8.0.28 MySQL Community Server - GPL
 
 Copyright (c) 2000, 2022, Oracle and/or its affiliates.
 ```
+
+### DATABASESみてみる
+```sh
+mysql> show databases;
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.09 sec)
+```
+
+### Tablesみてみる
+```sh
+mysql> show tables in mysql;
+
++------------------------------------------------------+
+| Tables_in_mysql                                      |
++------------------------------------------------------+
+| columns_priv                                         |
+| component                                            |
+....
+.......
+37 rows in set (0.06 sec)
+```
+
+
+
